@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 const bonusAnswer = Math.floor(Math.random() * 10);
 
-function AnswerInput({card}) {
+function AnswerInput({card, changePrevScore}) {
     const [answer, setAnswer] = useState("");
     const [score, setScore] = useState(0);
     const {answers} = card;
@@ -19,6 +19,8 @@ function AnswerInput({card}) {
             setAnswer("");
         }
     }, [answer]);
+
+    useEffect(() => () => changePrevScore(score));
 
     return (
         <div>

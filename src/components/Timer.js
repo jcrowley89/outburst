@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-function Timer() {
+function Timer({ changePrevScore }) {
     const [timeDisplay, setTimeDisplay] = useState(60)
     const timer = setTimeout(() => setTimeDisplay(timeDisplay - 1), 1000);
     useEffect(() => () => clearTimeout(timer));
