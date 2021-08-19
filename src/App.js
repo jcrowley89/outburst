@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import outburst from "./outburst.png"
 import "./App.css"
 import data from "./utils/data"
 import Button from "./components/Button"

@@ -9,6 +9,13 @@ function AnswerInput({card, changePrevScore}) {
     
     console.log(answers[bonusAnswer])
 
+    function formatAnswer(a) {
+        a = a.replace(/[.,\/#!$%\^&\*;:'{}=\-_`~()]/g,"");
+        a = a.replace(/\s/g,"");
+        a = a.toLowerCase()
+        return a;
+    }
+
     useEffect(() => {
         if (answers.includes(answer)) {
             if (answer === answers[bonusAnswer]) {
@@ -25,7 +32,7 @@ function AnswerInput({card, changePrevScore}) {
     return (
         <div>
             <h2>Current Score: {score}</h2>
-            <input type="text" onChange={e => setAnswer(e.target.value)} value={answer} />
+            <input type="text" onChange={e => setAnswer(formatAnswer(e.target.value))} value={answer} />
         </div>
     )
 }
