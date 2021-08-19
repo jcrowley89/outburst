@@ -1,9 +1,13 @@
 import React, {useState, useEffect} from 'react'
 
-function Timer({ changePrevScore }) {
+function Timer({ endGame }) {
     const [timeDisplay, setTimeDisplay] = useState(60)
     const timer = setTimeout(() => setTimeDisplay(timeDisplay - 1), 1000);
-    useEffect(() => () => clearTimeout(timer));
+    
+    useEffect(() => {
+        if (timeDisplay === 0)  endGame();
+        return () => clearTimeout(timer)
+    });
 
     return (
         <h2>
