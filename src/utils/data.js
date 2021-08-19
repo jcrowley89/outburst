@@ -46,7 +46,7 @@ const data = {
     },
     {
         name: "Types of sports balls",
-        answers: ["ping pong", "football", "soccer"," baseball", "tennis", "golf", "volleyball", "basket ball", "softball", "mushball"]
+        answers: ["ping pong", "football", "soccer", "baseball", "tennis", "golf", "volleyball", "basketball", "softball", "mushball"]
     },
     {
         name: "Types of Candy Bars",
