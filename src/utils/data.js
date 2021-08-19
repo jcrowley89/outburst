@@ -30,7 +30,7 @@ const data = {
     },
     {
         name: "Fast Food Chains",
-        answers: ["McDonald’s", "Taco Bell", "Carl’s Jr.", "KFC", "Burger King", "Wendy’s", "Jack in the Box", "Arby’s", "Long John Silvers", "Subway"]
+        answers: ["McDonald's", "Taco Bell", "Carl's Jr.", "KFC", "Burger King", "Wendy's", "Jack in the Box", "Arby's", "Long John Silvers", "Subway"]
     },
     {
         name: "Buttons to press on a VCR",
@@ -50,7 +50,7 @@ const data = {
     },
     {
         name: "Types of Candy Bars",
-        answers: ["Twix", "Baby Ruth", "Snickers", "Hershey’s Chocolate", "3 Musketeers", "Butterfinger", "Crunch", "Almond Joy", "Mounds", "Payday"]
+        answers: ["Twix", "Baby Ruth", "Snickers", "Hershey's Chocolate", "3 Musketeers", "Butterfinger", "Crunch", "Almond Joy", "Mounds", "Payday"]
     },
     {
         name: "California Cities that start with the letter S",
