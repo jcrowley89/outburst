@@ -22,7 +22,7 @@ function App() {
       <h1 style={{margin: "2rem, 0",fontSize:"4rem"}}>OUTBURST!</h1>
       {/* <img id="outburstLogo" src={outburst} alt="outburst-logo"></img> */}
       <h2>{gameActive ? currentCard.name : null}</h2>
-      {gameActive? null : <h2>Previous Score: {prevScore}</h2>}
+      {gameActive ? null : <h2>Previous Score: {prevScore}</h2>}
       {gameActive ? <Timer /> : <Button onClick={handleClick} text="Start Game" />}
       {gameActive ? <AnswerInput card={currentCard} changePrevScore={s => setPrevScore(s)} /> : null}
     </div>
