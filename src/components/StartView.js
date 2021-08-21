@@ -10,7 +10,7 @@ function StartView({ handleClick, prevScore }) {
       ) : (
         <div>
           <p>
-            Burt Stout is a super <strong>FUN</strong> game that is in no way
+            <strong>Burt Stout</strong> is a super <strong>FUN</strong> game that is in no way
             affiliated with Outburst
             <sup>
               <small>TM</small>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +7,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #03256C;
+  color: #EDDFEF;
+}
+
+h1, h2, h3, strong, button {
+  font-family: "Luckiest Guy";
+  letter-spacing: .3rem;
+}
+
+h1, button {
+  color: #EDEBA0;
+}
+
+h2, h3, strong {
+  color: #06BEE1;
 }
 
 code {
@@ -14,8 +31,8 @@ code {
 
 button {
   padding: 1rem 2rem;
-  border: 5px solid black;
-  background-color: white;
+  border: 5px solid #EDEBA0;
+  background-color: #03256C;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
