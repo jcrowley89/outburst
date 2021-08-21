@@ -5,7 +5,6 @@ import AnswerInput from "./AnswerInput.js";
 const bonusIndex = Math.floor(Math.random() * 10);
 
 function GameView({ endGame, currentCard, changePrevScore }) {
-  console.log("why");
 
   const [bonus, setBonus] = useState("");
 

@@ -15,11 +15,9 @@ function AnswerInput({ bonus, answers, changePrevScore }) {
     if (answers.includes(answer)) {
       if (answer === bonus) {
         answers.splice(answers.indexOf(answer), 1);
-        console.log(answers);
         setScore((s) => s + 5);
       } else {
         answers.splice(answers.indexOf(answer), 1);
-        console.log(answers);
         setScore((s) => s + 1);
       }
       setAnswer("");
