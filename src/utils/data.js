@@ -1,5 +1,5 @@
-const data = {
-  cards: [
+function Data() {
+  this.cards = [
     {
       name: "Sports that require special shoes",
       answers: [
@@ -209,7 +209,7 @@ const data = {
         "santabarbara",
       ],
     },
-  ],
-};
+  ];
+}
 
-export default data;
+export default Data;
