@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 function TimerDisplay({ endGame }) {
-  const [timeRemaining, settimeRemaining] = useState(60);
-  const timeout = setTimeout(() => settimeRemaining(timeRemaining - 1), 1000);
+  const [timeRemaining, setTimeRemaining] = useState(60);
+  const timeout = setTimeout(() => setTimeRemaining(timeRemaining - 1), 1000);
 
   useEffect(() => {
     if (timeRemaining === 0) endGame();
